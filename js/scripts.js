@@ -10,7 +10,6 @@ Pizza.prototype.getCost = function () {
     return this.size += this.toppings;
   }
 }
-console.log(Pizza());
 
 //user-interface logic
 
