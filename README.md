@@ -1,12 +1,19 @@
-SPECIFICATIONS:
+# Order Pizza
+
+#### 3rd Independent Project for Epicodus
+#### Technology used: HTML, CSS, Bootstrap, JavaScript, Jquery
+
+##### By Safiy Cham
+
+## Description
+
+"Order Pizza" is a website for ordering pizzas. The customer enters the size and toppings of the pizza to get the price.
+
+## Specifications:
 
 * Program will take user's inputs of topping(s) and order size, and return it.
   * Input: Pepperoni, Pineapple, Medium
   * Output: Pepperoni, Pineapple, Medium
-
-* Program will alert user, if one or both topping(s) and size are not selected.
-  * Input: Anchovy
-  * Output: Please select toppings and size
 
 * Program will return cost after selecting a topping and size.
   * Input: Cheese, Large
@@ -14,4 +21,20 @@ SPECIFICATIONS:
 
 * Program will return cost after selecting multiple toppings and size.
   * Input: Pepperoni, Mushrooms, Small
-  * Output: $14
+  * Output: $16
+
+## Setup
+
+* Clone Github Repository
+* Open index.html on web browser
+* Enter choices and press "Submit" button
+
+## Link
+
+Click here (https://github.com/safiyc/Order-Pizza_WK4-Project) to access the Github page for this project.
+
+## License
+
+This software is licensed under the MIT licensed
+
+Copyright (c) 2017
