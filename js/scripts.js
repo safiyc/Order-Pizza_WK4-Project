@@ -20,8 +20,9 @@ Pizza.prototype.getCost = function() {
 
 // user-interface logic
 $(document).ready(function() {
-  $("form").submit(function(event){
+  $("#pizza-form").submit(function(event){
     event.preventDefault();
+    $("#pizza-options").hide();
     var inputtedSize = $("select#size").val();
     var inputtedToppings = [];
     $("input[name='toppings']:checked").each(function(){
@@ -33,5 +34,16 @@ $(document).ready(function() {
     yourPizza.getCost();
     console.log(yourPizza);
 
+    $("#your-pizza").show();
+  });
+
+  $("#address-form").submit(function(event){
+    event.preventDefault();
+    var firstName = $("#first-name").val();
+    var lastName = $("#last-name").val();
+    var street = $("#street").val();
+    var city = $("#city").val();
+    var state= $("#state").val();
+    var zipCode = $("#zipcode").val();
   });
 });
