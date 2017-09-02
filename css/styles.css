@@ -1,3 +1,42 @@
+* {
+  outline: solid 1px;
+}
+
 #your-pizza {
   display: none;
+}
+
+.logo-name {
+  text-align: center;
+}
+
+.slogan {
+  text-align: center;
+}
+
+#pizza-selection {
+  top: 10%;
+  width: 690px;
+  height: 300px;
+}
+
+.section-heading {
+  font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.next-button {
+  margin-top: 5%;
+  margin-left: 93%;
+}
+
+.pizza-overlay {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  opacity: .5;
+  width: 690px;
+  height: 300px;
+  top: 10%;
 }
