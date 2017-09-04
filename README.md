@@ -7,7 +7,7 @@
 
 ## Description
 
-"Order Pizza" is a website for ordering pizzas. The customer enters the size and toppings of the pizza to get the price.
+"Order Pizza" is a website for ordering a pizza. The customer enters the size and toppings of the pizza to get the price.
 
 ## Specifications:
 

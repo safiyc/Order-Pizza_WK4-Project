@@ -10,74 +10,48 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="logo-name"> ~Your Pizza~</h1>
-      <h4 class="slogan"> The cheapest pizza in town!</h4>
-      <form id="pizza-selection">
-        <div class="form-group">
-          <div class="section-heading"> Size:</div>
-          <div class="row">
-            <div class="col-sm-4">
-              <input type="radio" name="size" value="small"> Small - $6
-            </div>
-            <div class="col-sm-4">
-              <input type="radio" name="size" value="medium"> Medium - $8
-            </div>
-            <div class="col-sm-4">
-              <input type="radio" name="size" value="large"> Large - $10
-            </div>
-          </div>
-        </div>
-        <div class="form=group">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="section-heading"> Meat - $2ea:</div>
-              <input type="checkbox" name="topping" value="meat" checked:"checked"> Pepperoni<br>
-              <input type="checkbox" name="topping" value="meat"> Grilled Chicken<br>
-              <input type="checkbox" name="topping" value="meat"> Meatballs<br>
-              <input type="checkbox" name="topping" value="meat"> Sausage<br>
-            </div>
-            <div class="col-sm-6">
-              <div class="section-heading"> Vegetable - $1ea:</div>
-              <input type="checkbox" name="topping" value="vegetable"> Mushrooms<br>
-              <input type="checkbox" name="topping" value="vegetable"> Pineapple<br>
-              <input type="checkbox" name="topping" value="vegetable"> Spinach<br>
-              <input type="checkbox" name="topping" value="vegetable"> Zucchini<br>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12">
-      </form>
-        <button type="submit" class="next-button"> Next</button>
+      <div class="top-banner">
+        <h1>~Your Pizza~</h1>
+        <h4>The Cheapest Pizza in Town!</h4>
       </div>
-      <div class="pizza-overlay"></div>
+      <div id="pizza-options">
+        <form id="pizza-form">
+          <div class="form=group">
+            <div class="row">
+              <div class="col-sm-6">
+                <div>Meat (2ea):</div>
+        		    <input type="checkbox" name="meat" value="pepperoni" checked:"checked">Pepperoni<br>
+                <input type="checkbox" name="meat" value="grilled-chicken">Grilled Chicken<br>
+        		    <input type="checkbox" name="meat" value="sausage">Sausage<br>
+              </div>
+              <div class="col-sm-6">
+                <div>Veggie (1ea):</div>
+                <input type="checkbox" name="veggie" value="pineapple">Pineapple<br>
+                <input type="checkbox" name="veggie" value="spinach">Spinach<br>
+                <input type="checkbox" name="veggie" value="mushrooms">Mushrooms<br>
+              </div>
+            </div>
+  	      </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="size">Size:</label>
+                <select id="size" class="form-control">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <button type="submit" class="btn submit-button">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
       <div id="your-pizza">
-        <h3> This is your pizza:</h3>
-        <p> Cost: <span class="cost"></span></p>
-        <div>
-          Please fill out the fields below to submit your order:
-          <form id="address-form">
-            <div class="form-group">
-              <input type="text" placeholder="First Name" class="form-control" id="first-name">
-            </div>
-            <div class="form-group">
-              <input type="text" placeholder="Last Name" class="form-control" id="last-name">
-            </div>
-            <div class="form-group">
-              <input type="text" placeholder="Street" class="form-control" id="street">
-            </div>
-            <div class="form-group">
-              <input type="text" placeholder="City" class="form-control" id="city">
-            </div>
-            <div class="form-group">
-              <input type="text" placeholder="State" class="form-control" id="state">
-            </div>
-            <div class="form-group">
-              <input type="number" placeholder="Zipcode" class="form-control" id="zipcode">
-            </div>
-
-            <button class="order btn btn-default" type="submit"> Order</button>
-          </form>
-        </div>
+        <h3>Thank you for your order.</h3>
+        <p class="cost"></p>
       </div>
     </div>
   </body>
